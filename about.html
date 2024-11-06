@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>About Us - Top Contributors</title>
+    <style>
+        /* Basic Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Spartan", sans-serif;
+        }
+
+        /* Navbar Styles */
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: #e3e6f3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            transition: 0.3s ease;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active {
+            color: rgb(20, 220, 220);
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background-color: rgb(20, 220, 220);
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+
+        /* Contributors Section */
+        .contributors {
+            padding: 40px 80px;
+            text-align: center;
+        }
+
+        .contributors h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contributor {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contributor img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .contributor h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contributor p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contributor a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        .contributor a:hover {
+            text-decoration: underline;
+        }
+
+        .about-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            padding: 10px 0;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ddd;
+        }
+
+        body {
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="index.html#contact-section">Contact Us</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="contributors">
+        <h2>Top Contributors</h2>
+
+        <div class="contributor">
+            <img src="img/myself/me2.jpg" alt="Contributor 1">
+            <h3>Akshar Mishra</h3>
+            <p>Email: <a href="mailto:akshar.manan@gmail.com">akshar.manan@gmail.com</a></p>
+        </div>
+
+        <div class="contributor">
+            <img src="img/myself/me1.jpg" alt="Contributor 2">
+            <h3>Ravi Ranjan Sinha</h3>
+            <p>Email: <a href="mailto:rrsheaven@gmail.com">rrsheaven@gmail.com</a></p>
+        </div>
+
+        <div class="contributor">
+            <img src="img/myself/me3.jpg" alt="Contributor 3">
+            <h3>Pranjul Ojha</h3>
+            <p>Email: <a href="mailto:ojhapranjul9960@gmail.com">ojhapranjul9960@gmail.com</a></p>
+        </div>
+    </section>
+    <footer class="about-footer">
+        <p>&copy; 2024, All Rights Reserved, MindCrafters</p>
+    </footer>
+</body>
+
+</html>
